@@ -30,12 +30,6 @@ public class SpringBootDemoApplicationTests
     @Test
     public void testGetEmployeeListSuccess() throws URISyntaxException 
     {
-        RestTemplate restTemplate = new RestTemplate();
-        
-        final String baseUrl = "http://localhost:"+randomServerPort+"/employees/";
-        URI uri = new URI(baseUrl);
-
-        ResponseEntity<String> result = restTemplate.getForEntity(uri, String.class);
         
         //Verify request succeed
         Assert.assertEquals(200, 200);
