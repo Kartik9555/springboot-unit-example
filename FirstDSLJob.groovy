@@ -4,7 +4,7 @@ job('Maven_First_DSL_Job') {
         github('https://github.com/Kartik9555/springboot-unit-example.git', 'master')
     }
     triggers {
-        scm(* * * * *)
+        scm('* * * * *')
     }
     steps {
         maven('clean package')
