@@ -17,5 +17,10 @@ pipeline {
 				echo 'Deploying Simple Maven Project'
 			}
 		}
+		stage('Deploy Prod'){
+			steps {
+				echo 'Deploying Simple Maven Project to PROD'
+			}
+		}
 	}
 }
